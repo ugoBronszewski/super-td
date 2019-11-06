@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - '9'
+
+cache: yarn
+
+deploy:
+  provider: heroku
+  api_key: ...
+  on: production
+
+script:
+  - yarn install
+  - yarn run test
