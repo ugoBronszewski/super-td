@@ -3,13 +3,13 @@ node_js:
 - '9'
 cache: yarn
 
+script:
+- yarn install
+- yarn run test
+
 deploy:
   provider: heroku
   api_key:
     secure: TAwp0Yj3aphGLdnvl7LHWWXM3GHSdhVvTpsYSsH5C+ATK1/BSAFFIHwqM9CJoxCVzPu1Tmz+lGe5cgGR+/0HQYxxQoJD4y2E5BU+ebZgHN36JpdkLhriUn4Rs/pYiZLADJ0gV4G0zStDL8BW8Qr23UY6ZozqRILF/j9CjW1WyQZv+FVaU5t2PCoZDAcAZ/1baYWz3klFIz+rwacvr1Txls2ueuyWgAwj2W5COz9NZc3leg+kHSS+eZQrHlwcMgT3hnswPb9Mc3fXch5GyUL/6EDM15IQ6LY5Wtp2JDG0dU8zTbxTpjY98dAAAl2PkNvBYP5lpYCDgjJ3fgSJTychb5YXMje0rV6DQG7Q0NcpLo2aUWTOrFS7kd+kL3yoC3ALqffGs9/8ecTic7iEjtx7ka4+d7QCpV6/emZkq8yvf6YuRg9VjL8ulLZl6dhwjyOaNgvQMsKYD3lq1kpAr5Uo42i1wgKBAd15vMUmMvbqDRFnmuTWNVXYvRYS87uNLH6rBZOEwKwi3lWchkXWa6pP9Sz2Ipg2goNm8e2TY7EhM5/ocAvd/7cpFESOwnonP3u+NzaeqCSBnlUpsiyW5SlS4+Qo75ACG4xepfERaE3PlQ+fr0Xuj3584IMd9FlhKuQ5EN6ON2sg+zq8BDwcuTzPL3aXRTdXhbX+yKK4igDOJz8=
   on: production
   app: super-td
-
-script:
-- yarn install
-- yarn run test
